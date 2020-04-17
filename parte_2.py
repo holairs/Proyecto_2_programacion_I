@@ -28,14 +28,14 @@ while inicio == 'si':
 
     precio = 0
     tipo = ''
-
+#validar los valores del fin de semana
 
     semana = True
     if fin_de_semana == 'si':
         semana = True
     else:
         semana = False
-
+#validar el tipo de veiculo y su precio
 
     if tipoVehiculo == '1':
         precio = 15
@@ -46,7 +46,7 @@ while inicio == 'si':
     if tipoVehiculo == '3':
         precio = 50
         tipo = 'Camioneta'
-
+#validar el tipo de cliente
     miembro = True
 
     if tipoCLiente == '1':
@@ -59,7 +59,7 @@ while inicio == 'si':
     else:
         tipoCLiente = 'Estandar'
 
-
+#validar los descuentos
     descuento1 = 0
     descuento2 = 0
     if miembro:
@@ -74,7 +74,7 @@ while inicio == 'si':
 
     descuentoTotal = descuento1 + descuento2
 
-
+#imprimir resultados
     Total = descuentoTotal + precio
     print('Tipo: ' + tipo)
     print('Precio: ' + str(precio))
@@ -93,7 +93,7 @@ while inicio == 'si':
     print('-----------------------')
 
     registro = []
-
+#repetidor para ingresar los datos en el diccionario
     for i in range (1):
         archivo = {}
 
@@ -105,7 +105,7 @@ while inicio == 'si':
         archivo['Total'] = Total
 
         registro.append(archivo)
-    
+    #exportar a direccion dada por el usuario mas el nombre
     with open(direccion_exportar + '/' + nombre_exportar + '.json', 'w') as base:
         json.dump(registro, base)
 
