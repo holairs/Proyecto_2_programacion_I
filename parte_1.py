@@ -1,7 +1,7 @@
 import os,json
 inicio = 1
 while inicio > 0:
-
+#ingreso de variables
     direccion = input('escriba la direccion en donde desea buscar, ejemplo(/Users/Walrus/Downloads): ')
     tipo = input('Ingrese la extension que desea buscar: ')
     nombre = input('Que nombre desea aplicar a los archivos?: ')
@@ -36,7 +36,7 @@ while inicio > 0:
         
     numero = 0
     total = int(len(lstFiles))
-
+#repetidor para meter datos en la lista datos
     for i in range (total):
         numero = numero + 1
         item = nombre
@@ -53,7 +53,7 @@ while inicio > 0:
         print('')
     print('----------------------------')
     print('----------------------------')
-
+#guardar los cambios en un archivo json
     with open('Base_de_datos_json_buscador.json', 'w') as base:
         json.dump(datos, base)
     print('Archivos Esxportados con exito')
