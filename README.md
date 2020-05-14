@@ -1,5 +1,5 @@
 # Proyecto_2_programacion_I
-Entrega de Proyecto 2, Programacion I (Parte 1 y 2)
+Entrega de Proyecto Programacion I
 
 Integrante:
 
@@ -7,9 +7,5 @@ Integrante:
 
 Ejercicios Resueltos:
 
+Pilas:
 
-parte 1:
-https://github.com/ivanwalrus/Proyecto_2_programacion_I/blob/master/parte_1.py
-
-parte 2:
-https://github.com/ivanwalrus/Proyecto_2_programacion_I/blob/master/parte_2.py
